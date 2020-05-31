@@ -1,5 +1,6 @@
+# Git Cheat Seet ( Only for master branch )
 
-# New Repository
+# Creat new repository
 github Repository တစ်ခုလုပ်မယ်ဆို github menu ရဲ့ညာဘက်ကအပေါင်းမှာနှိပ်ပြီးလုပ်လို့ရတယ်
 
 ----------
@@ -77,4 +78,7 @@ git commit -m "My Message"
 > working tree clean ဆိုတဲ့စာသားပေါ်နေမှတင်လို့ရပါတယ်။ 
 
 အဲဒီလို git status နဲ့မစစ်ပဲတင်တယ်ဆို error တွေရှိတတ်ပါတယ်
+
+working tree clean ဆိုတဲ့စာသားမျိုးပေါ်နေပြီဆို git push origin master လုပ်လို့ရပါပြီ။ 
+
 
