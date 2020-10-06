@@ -3,7 +3,7 @@
 - [1- Add text inside every html element](#add-text) 
 - [2- Add label tag for every input tag](#add-label) 
 - [3- Add rel to every a tag with target="_blank"](#add-rel) 
-- [3- Add alt to every image tag](#add-image) 
+- [4- Add alt to every image tag](#add-alt) 
 
 ## 1 - Add text inside every html element, e.g `<a>` `<button>` <a name="add-text"></a>
 
