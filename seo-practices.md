@@ -1,7 +1,7 @@
 # SEO practices
 
 - [1- Add text inside every html element](#add-text) 
-- [2- Add label for every input tag](#add-label) 
+- [2- Add label tag for every input tag](#add-label) 
 - [3- Add rel to every a tag with target="_blank"](#add-rel) 
 
 ## 1 - Add text inside every html element, e.g `<a>` `<button>` <a name="add-text"></a>
@@ -36,7 +36,7 @@ text-indent:-9999px;
 ```
 
 --------
-## 2 - Add Label for every input tag  <a name="add-label"></a>
+## 2 - Add Label tag for every input tag  <a name="add-label"></a>
 
 
 Add label tag for every input tag
