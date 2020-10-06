@@ -1,8 +1,8 @@
 # SEO practices
 
-[1- Add text inside every html element](#add-text)
-[2- Add label for every input tag](#add-label)
-[3- Add rel to every a tag with target="_blank"](#add-rel)
+- [1- Add text inside every html element](#add-text) 
+- [2- Add label for every input tag](#add-label) 
+- [3- Add rel to every a tag with target="_blank"](#add-rel) 
 
 ## 1 - Add text inside every html element, e.g `<a>` `<button>` <a name="add-text"></a>
 
