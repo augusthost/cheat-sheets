@@ -3,6 +3,7 @@
 - [1- Add text inside every html element](#add-text) 
 - [2- Add label tag for every input tag](#add-label) 
 - [3- Add rel to every a tag with target="_blank"](#add-rel) 
+- [3- Add alt to every image tag](#add-image) 
 
 ## 1 - Add text inside every html element, e.g `<a>` `<button>` <a name="add-text"></a>
 
@@ -58,6 +59,8 @@ Add label tag for every input tag
 
 ## 3 - Add rel to every a tag with target="_blank" <a name="add-rel"></a>
 
+Add rel attribute to every `<a>` tag which includes target="_blank" attribute
+
 ### Bad 
 ```
 <a href="https://example.com" target="_blank">Example</a>
@@ -66,6 +69,22 @@ Add label tag for every input tag
 ### Good 
 ```
 <a href="https://example.com" rel="noreferrer noopener" target="_blank">Example</a>
+```
+
+---------
+
+## 3 - Add alt to every image tag <a name="add-alt"></a>
+
+Add alt attribute for every image tag
+
+### Bad 
+```
+<img src="https://picsum.photos/2000">
+```
+
+### Good 
+```
+<img src="https://picsum.photos/2000" alt="Nature Image">
 ```
 
 
