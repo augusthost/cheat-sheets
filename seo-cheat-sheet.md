@@ -4,6 +4,7 @@
 - [2- Add label tag for every input tag](#add-label) 
 - [3- Add rel attribute to every a tag with target="_blank"](#add-rel) 
 - [4- Add alt attribute to every image tag](#add-alt) 
+- [5- Do not use "read more"](#no-read-more) 
 
 ## 1 - Add text inside every html element, e.g `<a>` `<button>` <a name="add-text"></a>
 
@@ -86,5 +87,19 @@ Add alt attribute for every image tag
 ```
 <img src="https://picsum.photos/2000" alt="Nature Image">
 ```
+------
+
+## Do not use "Read More" <a name="no-read-more"></a>
+
+Do not use "Read More" at the end of excerpt content. Instead of "read more" please use "continue reading"
 
 
+### Bad
+```
+<a href="single-blog-link">Read More</a>
+```
+
+### Good
+```
+<a href="single-blog-link">Continue Reading</a>
+```
