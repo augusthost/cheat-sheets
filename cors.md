@@ -22,6 +22,16 @@ Cors ပြသနာမှာ request domain နဲ့ response domain ၂ ခ�
 
 ## 4 b. .htaccess နဲ့ဖွင့်နည်း
 
+domain အားလုံးအတွက်
+```
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+```
+
+ပစ်မယ့် domain တစ်ခု နှစ်ခုအတွက်ပဲ
 ```
 
 <IfModule mod_headers.c>
