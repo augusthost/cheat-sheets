@@ -69,7 +69,7 @@ store ကို access လုပ်မယ်ဆို `this.$store.` နဲ့�
 
 ```
 this.$store.getters.products;
-this.$store.state.products; /* state ဒီတစ်ကြောင်းလိုမျိုးတိုက်ရိုက် access မလုပ်သင့်ပါ getters,mutations,actions ကနေပဲ access လုပ်သင့်ပါတယ် */ 
+this.$store.state.products; /* state data တွေကို ဒီတစ်ကြောင်းလိုမျိုးတိုက်ရိုက် access မလုပ်သင့်ပါ getters,mutations,actions ကနေပဲ access လုပ်သင့်ပါတယ် */ 
 ```
     
     
