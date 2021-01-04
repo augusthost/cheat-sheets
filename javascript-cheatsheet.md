@@ -336,14 +336,14 @@ Javascript နဲ့ form submit လုပ်ရင် `e.preventDefault();` ထ
  
  # Array Vs Object <a name="arrayvsobj"></a>
  
- 1 - Array ကို [] square bracket နဲ့ ရေးတယ်
- 2 - Object ကို {} curly bracket နဲ့ ရေးတယ်
+ 1. - Array ကို [] square bracket နဲ့ ရေးတယ်
+ 2. - Object ကို {} curly bracket နဲ့ ရေးတယ်
  
- 3 - Array data ကိုခေါ်မယ်ဆို index number နဲ့ခေါ်မယ် 
- 4 - Object data ကိုခေါ်မယ်ဆို key နဲ့ခေါ်မယ်
- 5 - Array ဆို [] square , Object ဆို . dot 
- 
- 6 - Array ကို loop ပတ်တယ်ဆို for .. of 
+ 3. - Array data ကိုခေါ်မယ်ဆို index number နဲ့ခေါ်မယ် 
+ 4. - Object data ကိုခေါ်မယ်ဆို key နဲ့ခေါ်မယ်
+ 5. - Array ဆို [] square , Object ဆို . dot 
+
+ 6. - Array ကို loop ပတ်တယ်ဆို for .. of 
  
  ```javascript
  
