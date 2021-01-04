@@ -356,8 +356,8 @@ Javascript နဲ့ form submit လုပ်ရင် `e.preventDefault();` ထ
  
   ```javascript
   
- for(let key in Array){
-  console.log(`${key} : ${Array[key]}`)
+ for(let key in Object){
+  console.log(`${key} : ${Object[key]}`)
  }
  
  ```
