@@ -19,6 +19,7 @@
 - [Object CRUD](#object)
 - [Array CRUD](#array)
 - [Play with Array data](#playwitharray)
+- [Array vs Object](#arrayvsobj)
 
 ---------
 # Codes <a name="codes">
@@ -330,3 +331,30 @@ Javascript နဲ့ form submit လုပ်ရင် `e.preventDefault();` ထ
 
 # Ajax <a name="ajax">
 <img src="https://i.ibb.co/wdC8qgZ/ajax.png">
+ 
+ -----------
+ 
+ # Array Vs Object
+ 
+ 1 - Array ကို [] square bracket နဲ့ ရေးတယ်
+ 2 - Object ကို {} curly bracket နဲ့ ရေးတယ်
+ 
+ 3 - Array data ကိုခေါ်မယ်ဆို index number နဲ့ခေါ်မယ် 
+ 4 - Object data ကိုခေါ်မယ်ဆို key နဲ့ခေါ်မယ်
+ 5 - Array ဆို [] square , Object ဆို . dot 
+ 
+ 6 - Array ကို loop ပတ်တယ်ဆို for .. of 
+ ```javascript
+ for(let val of Array){
+  console.log(val)
+ }
+ ```
+ 7 - Object ကို loop ပတ်မယ်ဆို for .. in 
+  ```javascript
+ for(let key in Array){
+  console.log(`${key} : ${Array[key]}`)
+ }
+ ```
+ 
+
+
