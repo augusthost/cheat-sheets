@@ -334,7 +334,7 @@ Javascript နဲ့ form submit လုပ်ရင် `e.preventDefault();` ထ
  
  -----------
  
- # Array Vs Object
+ # Array Vs Object <a name="arrayvsobj"></a>
  
  1 - Array ကို [] square bracket နဲ့ ရေးတယ်
  2 - Object ကို {} curly bracket နဲ့ ရေးတယ်
@@ -344,16 +344,22 @@ Javascript နဲ့ form submit လုပ်ရင် `e.preventDefault();` ထ
  5 - Array ဆို [] square , Object ဆို . dot 
  
  6 - Array ကို loop ပတ်တယ်ဆို for .. of 
+ 
  ```javascript
+ 
  for(let val of Array){
   console.log(val)
  }
+ 
  ```
  7 - Object ကို loop ပတ်မယ်ဆို for .. in 
+ 
   ```javascript
+  
  for(let key in Array){
   console.log(`${key} : ${Array[key]}`)
  }
+ 
  ```
  
 
