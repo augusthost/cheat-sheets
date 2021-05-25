@@ -1,6 +1,6 @@
-# PHP Design Pattern
+# PHP Design Patterns
 
-#### ဒီ Note တွေကတော့ Laravel Founder - Jeffery Way ရဲ့ PHP Design Patterns series ကိုကြည့်ပြီး ကောက်နုတ်ထားတဲ့ Cheat Sheet Note ပါ။
+#### ဒီ Note တွေကတော့ Laravel Founder - Jeffrey Way ရဲ့ PHP Design Patterns series ကိုကြည့်ပြီး ကောက်နုတ်ထားတဲ့ Cheat Sheet Note ပါ။
 
 ## Interface 
 
@@ -77,5 +77,54 @@ class Movie extends Common{
 ```
 
 #### Abstract Method
+
+လက်ရှိ Abstract class ထဲမှာခေါ်သုံးထားတဲ့ ဘုံ methods တွေထဲက တစ်ခုကို dynamic ဖြစ်ချင်တယ်ဆိုရင် Abstract method ကိုသုံးလို့ရပါတယ်။ ဒီအောက်က ဥပမာ
+မှာ play ဆိုတဲ့ method ကို abstract method အနေနဲ့ ခေါ်သုံးထားပါတယ်။ 
+
+```php
+
+abstract class Common{
+
+  public function run(){
+     $this->download();
+     $this->play();
+  }
+
+  public function upload(){
+     // upload codes
+  }
+
+  public function download(){
+      // download codes
+  } 
+
+  protected abstract function play()
+
+}
+
+class Audio extends Common{
+   public function listen(){
+      // listen 
+   } 
+   public function play(){
+      echo 'playing audio';
+   } 
+}
+
+class Movie extends Common{
+   public function watch(){
+      // watch 
+   } 
+   public function play(){
+      echo 'playing video';
+   } 
+}
+
+(new Movie)->run(); 
+
+// Should echo playing video
+
+```
+
 
 
