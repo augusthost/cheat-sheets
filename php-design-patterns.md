@@ -7,12 +7,13 @@
 Interface ဆိုတာ term လိုမျိုးပဲ class တစ်ခုမှာ ဒီ methods တွေအဓိကပါဝင်မယ်လို့ကြေငြာထားတဲ့သဘော အကယ်၍ instantiate လုပ်တဲ့ class မှာ method တစ်ခုပါမလာရင် error ပြမယ်။
 
 **ဘယ်လိုနေရာတွေမှာ သုံးသလဲ?**
+
 Interface ကို တူညီတဲ့ methods တွေပါတဲ့ class တွေကိုဘုံထုတ်တဲ့ အခါသုံးပါတယ် method နာမည်တွေ ကိုပဲ ကြေငြာပေးရပါတယ် method codes တွေမလိုပါ။ 
 
 မှတ်ချက်။  ။ Interface က implements သို့မဟုတ် Dependency Inject လုပ်လို့ရပါတယ်။
 
 ```php
-interface CarService{
+interface CarServiceInterface{
   
   public method drive()
   
@@ -21,7 +22,7 @@ interface CarService{
 }
 
 // call 1
-class BMW implements CarService{
+class BMW implements CarServiceInterface{
     
 }
 
@@ -29,7 +30,7 @@ class BMW implements CarService{
 class Lamboginny{
 
   protected $carService; 
-  public function __construct(CarService $carService){
+  public function __construct(CarServiceInterface $carService){
     $this->carService = $carService;
   }
 
@@ -51,11 +52,11 @@ Interface လိုမျိုးပဲ methods တွေကိုဘုံထ�
 abstract class Common{
 
   public function upload(){
-     // upload
+     // upload codes
   }
 
   public function download(){
-      // download 
+      // download codes
   } 
 
 }
