@@ -44,6 +44,37 @@ Adapter Class ဆိုတာ methods တွေမတူတဲ့ Class ၂ ခ�
 ## The template method pattern 
 
 #### Abstract Class
-Interface လိုမျိုးပဲ methods တွေကိုဘုံထုတ်တဲ့အခါသုံးပါတယ် ဒါပေမယ့် 
+Interface လိုမျိုးပဲ methods တွေကိုဘုံထုတ်တဲ့အခါသုံးပါတယ် ဒါပေမယ့် inherit class ပုံစံဖြစ်တဲ့အတွက် implements လုပ်တာမျိုးမဟုတ်ပဲ extends လုပ်ရတာဖြစ်ပါတယ်။ ပြီးတော့ interface လိုမျိုး method နာမည်ချည်းမဟုတ်ပဲ codes တွေပါထည့်ရေးရပါတယ်။
+
+```php
+
+abstract class Common{
+
+  public function upload(){
+     // upload
+  }
+
+  public function download(){
+      // download 
+  } 
+
+}
+
+class Audio extends Common{
+   public function listen(){
+      // listen 
+   } 
+}
+
+class Movie extends Common{
+   public function watch(){
+      // watch 
+   } 
+}
+
+
+```
 
 #### Abstract Method
+
+
