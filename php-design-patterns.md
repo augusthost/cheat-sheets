@@ -12,35 +12,56 @@ Interface ကို တူညီတဲ့ methods တွေပါတဲ့ class
 
 မှတ်ချက်။  ။ Interface က implements သို့မဟုတ် Dependency Inject လုပ်လို့ရပါတယ်။
 
-```php
-interface CarServiceInterface{
-  
-  public method drive()
-  
-  public method stop()
- 
-}
-
-// call 1
-class BMW implements CarServiceInterface{
-    
-}
-
-// call 2
-class Lamboginny{
-
-  protected $carService; 
-  public function __construct(CarServiceInterface $carService){
-    $this->carService = $carService;
-  }
-
-}
-```
 
 ## Adapter Class
 
 Adapter Class ဆိုတာ methods တွေမတူတဲ့ Class ၂ ခုကိုကြားခံပေါင်းစပ်ပေးတဲ့ class တစ်ခု Adapter class ရဲ့ construct method မှာ class ကို inject လုပ်ပေးရပါတယ်။ 
 ( Adapter Class က interface တွေကို implement လုပ်တာဖြစ်ပါတယ်။ ) 
+
+```php
+interface CarServiceInterface{
+
+    public function drive();
+
+    public function stop();
+
+  }
+
+  // call 1
+  class BMW implements CarServiceInterface{
+     public function drive(){
+       echo 'Driving BMW';
+     }
+     public function stop(){
+      echo 'Stop BMW';
+    }
+  }
+
+  // call 2
+  class CarAdapter implements CarServiceInterface{
+    protected $carService;
+    public function __construct(CarServiceInterface $carService){
+      $this->carService = $carService;
+    }
+    public function drive(){
+      echo $this->carService->drive();
+    }
+   public function stop(){
+     echo $this->carService->stop();
+   }
+  }
+
+  class Lamboginny implements CarServiceInterface{
+    public function drive(){
+      echo 'Driving Lamboginny';
+    }
+    public function stop(){
+     echo 'Stop Lamboginny';
+   }
+  }
+
+  (new CarAdapter(new Lamboginny))->drive();
+```
 
 ## The template method pattern 
 
@@ -98,7 +119,7 @@ abstract class Common{
       // download codes
   } 
 
-  protected abstract function play()
+  protected abstract function play();
 
 }
 
