@@ -8,9 +8,13 @@ Interface ဆိုတာ term လိုမျိုးပဲ class တစ်ခ
 
 **ဘယ်လိုနေရာတွေမှာ သုံးသလဲ?**
 
-Interface ကို တူညီတဲ့ methods တွေပါတဲ့ class တွေကိုဘုံထုတ်တဲ့ အခါသုံးပါတယ် method နာမည်တွေ ကိုပဲ ကြေငြာပေးရပါတယ် method codes တွေမလိုပါ။ 
+Interface ကို တူညီတဲ့ methods တွေပါတဲ့ class တွေကိုဘုံထုတ်တဲ့ အခါသုံးပါတယ်။
+ဥပမာ Car အမျိုးအစားတွေကို Class object အနေနဲ့ထားလိုက်မယ်
+BMW, Mercedes, Lamborghini အများကြီးရှိတယ် ဒါပေမယ့် 
+Car တိုင်းမှာ drive(),color(),model() စတဲ့ methods တွေမဖြစ်မနေပါရမယ်လို့ကြေငြာလိုက်တဲ့သဘောပါ
 
-မှတ်ချက်။  ။ Interface က implements သို့မဟုတ် Dependency Inject လုပ်လို့ရပါတယ်။
+
+မှတ်ချက်။  ။ Interface မှာ method နာမည်တွေ ကိုပဲ ကြေငြာပေးရပါတယ် method codes တွေမလိုပါ။ implements သို့မဟုတ် Dependency Inject လုပ်လို့ရပါတယ်။
 
 
 ## Adapter Class
@@ -149,7 +153,7 @@ class Movie extends Common{
 
 -----------------
 
-Repository
+## Repository
 
 Repository ဆိုတာ Database wrapper API လို့ပြောလို့ရတယ်
 ဥပမာ database ကို mysql db ကနေ mongodb ပြောင်းချင်တာမျိုးဆို
@@ -159,7 +163,7 @@ Laravel မှာ eloquent နဲ့ collections API တွေရှိပြီ
 
 ------------------
 
-Services
+## Services
 
 Controller က business logics တွေက
 အကြောင်းရေများလာရင် ရှုပ်ထွေးကုန်တယ် အဲဒီတော့ service class တွေခွဲပြီး
@@ -167,10 +171,10 @@ Controller က business logics တွေက
 
 ------------------
 
-Trait
+## Trait
 
 Trait က inherit လုပ်တာနဲ့ ဆင်တယ်
-ဒါပေမယ့် inherit မှာ single class ကိုပဲချိတ်ဆက်လို့ရတယ်
+ဒါပေမယ့် inherit တစ်ခါမှာ single class တစ်ခုကိုပဲချိတ်ဆက်လို့ရတယ်
 Trait မှာကျတော့ Class အကုန်လုံးနဲ့ share လို့ရတယ်။ 
 
 -------------------
