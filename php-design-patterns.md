@@ -147,5 +147,32 @@ class Movie extends Common{
 
 ```
 
+-----------------
+
+Repository
+
+Repository ဆိုတာ Database wrapper API လို့ပြောလို့ရတယ်
+ဥပမာ database ကို mysql db ကနေ mongodb ပြောင်းချင်တာမျိုးဆို
+mongodb repository ကို ကောက်စွပ်လိုက်ရုံနဲ့ mongodb အတွက် ready ဖြစ်ပြီးသား ပြီးတော့ 
+API တွေခေါ်သုံးလို့ရမယ် (ဥပမာ Mongodb::class->connect())
+Laravel မှာ eloquent နဲ့ collections API တွေရှိပြီးသားမို့ repository ကိုသိပ်အသုံးမပြုစေချင်။
+
+------------------
+
+Services
+
+Controller က business logics တွေက
+အကြောင်းရေများလာရင် ရှုပ်ထွေးကုန်တယ် အဲဒီတော့ service class တွေခွဲပြီး
+အကြောင်းရေနည်းအောင်လုပ်တဲ့အချိန်မှာ Services ကိုသုံးတယ် 
+
+------------------
+
+Trait
+
+Trait က inherit လုပ်တာနဲ့ ဆင်တယ်
+ဒါပေမယ့် inherit မှာ single class ကိုပဲချိတ်ဆက်လို့ရတယ်
+Trait မှာကျတော့ Class အကုန်လုံးနဲ့ share လို့ရတယ်။ 
+
+-------------------
 
 
