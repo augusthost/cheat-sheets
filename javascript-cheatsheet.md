@@ -166,7 +166,7 @@ const nameArray = document.querySelectorAll("#name");
  ```
  `===` နဲ့ `!==` ဆို အရမ်းတိကျတယ် type ပါစစ်တယ် ( security ပိုအားသာတယ် )
  
- `==` နဲ့ `!=` ဆို အရမ်းတိကျတယ် type ပါစစ်တယ်
+ `==` နဲ့ `!=` ဆို သိပ်မတိကျဘူး type ပါမစစ်ဘူး
  
  ----------
 # Loop <a name="loop">
@@ -343,7 +343,7 @@ Javascript နဲ့ form submit လုပ်ရင် `e.preventDefault();` ထ
  4. - Object data ကိုခေါ်မယ်ဆို key နဲ့ခေါ်မယ်
  5. - Array ဆို [] square , Object ဆို . dot 
 
- 6. - Array ကို loop ပတ်တယ်ဆို for .. of 
+ 6. - Array ကို loop ပတ်တယ်ဆို for .. of  
  
  ```javascript
  
