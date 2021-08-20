@@ -62,7 +62,7 @@ result ကိုခန့်မှန်းတာ ဖြစ်တဲ့အတွ
 Weight ဆိုတာ layers တွေတစ်ခုနဲ့တစ်ခု ချိတ်ဆက်တဲ့ကြားထဲက channels တွေမှာ random generate ထုတ်ထားတဲ့ ဂဏန်းတွေပဲဖြစ်ပါတယ်။ 
 random weight ကို input layer ကလာတဲ့ neuron တွေနဲ့ မြှောက်ပြီး ပေါင်းပေးရပါတယ်။ 
 
-
+<img src="https://user-images.githubusercontent.com/33022876/130192354-f3d7f58a-0ef5-48ac-bb44-5318c2420e9d.jpg">
 
 --------
 
