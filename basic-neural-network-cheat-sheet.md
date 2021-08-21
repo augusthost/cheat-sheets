@@ -174,7 +174,7 @@ let html = `<svg width="${X_MAX}" height="${Y_MAX}">
          cy="${point.y}"
          r="3"
          fill="${guess(trainWeights(),point) === -1 ? 'green': 'blue'}" />`
-    )}
+    ).join(""}
     <line x1="0" x2="${X_MAX}" y1="0" y2="${Y_MAX}" stroke="purple" />
   </svg>`;
 
