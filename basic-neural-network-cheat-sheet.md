@@ -44,7 +44,7 @@ Neural network layers တွေ အဓိက ၃ ပိုင်းရှိတ�
 - hidden layers 
 - output layer
 
-Layers တစ်ခုစီမှာ neurons အတိအကျ size ဘယ်လောက်ပါရမယ်မျိုး မရှိပါ network ကြီးလျှင်ကြီးသလောက် neurons တွေများပါမယ်
+input layer နဲ့ hidden Layers ထဲမှာ neurons အတိအကျ size ဘယ်လောက်ပါရမယ်မျိုး မရှိပါ network ကြီးလျှင်ကြီးသလောက် neurons တွေများပါမယ် output layer ကတော့ neuron တစ်ခုတည်းပဲရှိပါတယ်
 
 input layer ဆိုတာ ကိုယ်ကထည့်လိုက်တဲ့ data , train လိုတဲ့ data neurons အစုတွေပါတဲ့ အတန်းဖြစ်ပါတယ်
 
