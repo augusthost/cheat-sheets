@@ -34,6 +34,24 @@ exports.handler = async function(event,context){
 ``` 
 ဒီဥပမာမှာ user_id ဆိုတဲ့ parameter ဖမ်းပြထားပါတယ်။
 
+
+### response ဘယ်လိုပြန်မလဲ
+
+e.g
+```javascript
+ return {
+        statusCode:code,
+        body:JSON.stringify(data)
+    }
+```
+
+
+### client side က ပစ်ရမယ့် URL 
+
+```
+/.netlify/functions/my-func.js
+```
+
 ----------
 
 ### function ကိုဘယ်မှာရေးရသလဲ
