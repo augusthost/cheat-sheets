@@ -17,8 +17,6 @@ exports.handler = async function(event,context){
 
 ``` 
 
-----------
-
 ### request ကနေ api parameter ဘယ်လိုဖမ်းမလဲ
 
 event ထဲက queryStringParameters နဲ့ ဖမ်းလို့ရပါတယ် 
