@@ -11,7 +11,7 @@ Typescript ဆိုတာ javascript ကို error တွေနည်းစ�
 npm install -g typescript
 ``` 
 
-** Init config file ပြုလုပ်မယ်ဆို **
+**Init config file ပြုလုပ်မယ်ဆို**
 
 ```
 tsc --init
@@ -29,7 +29,7 @@ tsc --init
 - type [custom name]
 
 
-## Type ကြေငြာပုံများ  
+## Type declare ပုံများ  
 
 ```javascript
 
