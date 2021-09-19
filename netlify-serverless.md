@@ -23,22 +23,22 @@ event ထဲက queryStringParameters နဲ့ ဖမ်းလို့ရပ�
 
 ဥပမာ GET parameter
 
-```javascript
 
+```javascript
 exports.handler = async function(event,context){
      const user_id = event.queryStringParameters.user_id;
 }
-
 ``` 
+
 ဒီဥပမာမှာ user_id ဆိုတဲ့ parameter ဖမ်းပြထားပါတယ်။
 
 ဥပမာ POST parameter
 
 ```javascript
-
 exports.handler = async function(event,context){
      const {user_id} = JSON.parse(event.body);
 }
+```
 
 ### response ဘယ်လိုပြန်မလဲ
 
