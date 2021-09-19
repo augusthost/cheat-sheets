@@ -21,7 +21,7 @@ exports.handler = async function(event,context){
 
 event ထဲက queryStringParameters နဲ့ ဖမ်းလို့ရပါတယ် 
 
-ဥပမာ 
+ဥပမာ GET parameter
 
 ```javascript
 
@@ -32,6 +32,13 @@ exports.handler = async function(event,context){
 ``` 
 ဒီဥပမာမှာ user_id ဆိုတဲ့ parameter ဖမ်းပြထားပါတယ်။
 
+ဥပမာ POST parameter
+
+```javascript
+
+exports.handler = async function(event,context){
+     const {user_id} = JSON.parse(event.body);
+}
 
 ### response ဘယ်လိုပြန်မလဲ
 
