@@ -52,7 +52,7 @@ e.g
 
 ### Cors ဖွင့်ထားချင်တယ်ဆို ဒီလိုလေးဖွင့်လို့ရပါတယ်
 
-```
+```javascript
 const headers = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'Content-Type',
