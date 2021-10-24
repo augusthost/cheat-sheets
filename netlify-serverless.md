@@ -50,11 +50,33 @@ e.g
     }
 ```
 
+### Cors ဖွင့်ထားချင်တယ်ဆို ဒီလိုလေးဖွင့်လို့ရပါတယ်
+
+```
+const headers = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
+};
+
+// Check condition
+if (event.httpMethod !== 'POST') {
+    // To enable CORS
+    return {
+      statusCode: 200, // <-- Important!
+      headers,
+      body: 'This was not a POST request!'
+    };
+ }
+
+```
+
+
 
 ### client side က ပစ်ရမယ့် URL 
 
 ```
-/.netlify/functions/my-func.js
+/.netlify/functions/my-func
 ```
 
 ----------
