@@ -79,6 +79,19 @@ if (event.httpMethod !== 'POST') {
 /.netlify/functions/my-func
 ```
 
+
+### Pretty API URL
+
+API URL ကိုကြည့်လှအောင်ပြောင်းချင်တယ်ဆို အောက်က config ကို `netlify.toml` ထဲထည့်လိုက်ပါ 
+`/.netlify/functions/:my-func` ကနေ `/api/my-func` ကိုပြောင်းပစ်လို့ရပါပြီ
+
+```
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+```
+
 ----------
 
 ### function ကိုဘယ်မှာရေးရသလဲ
