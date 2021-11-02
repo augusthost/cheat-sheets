@@ -83,7 +83,8 @@ if (event.httpMethod !== 'POST') {
 ### Pretty API URL
 
 API URL ကိုကြည့်လှအောင်ပြောင်းချင်တယ်ဆို အောက်က config ကို `netlify.toml` ထဲထည့်လိုက်ပါ 
-`/.netlify/functions/:my-func` ကနေ `/api/my-func` ကိုပြောင်းပစ်လို့ရပါပြီ
+
+`/.netlify/functions/my-func` ကနေ `/api/my-func` ကိုပြောင်းပစ်လို့ရပါပြီ
 
 ```
 [[redirects]]
