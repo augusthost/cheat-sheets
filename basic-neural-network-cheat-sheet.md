@@ -96,17 +96,11 @@ Neuron ကိန်းဂဏန်းတွေကို 0 နဲ့ 1 ကြာ�
 const X_MAX = 400;
 const Y_MAX = 400;
 
-// Generate random numbers between min and max
 const random = (high, low) => Math.random() * (high - low) + low;
-
-// Generate numbers array
 const numb   = n => [...Array(n)].map((_, index) => index + 1);
-
-// Team to label points
 const team   = (point) => point.x > point.y ? 1 : -1;
 
 
-// Generate {x,y} object based on the number paramters
 const generatePoints = (num) =>{
     return numb(num).map(()=>{
        return {x:random(0,X_MAX),y:random(0,Y_MAX)}
@@ -116,7 +110,7 @@ const generatePoints = (num) =>{
 // Random input data
 const randomPoints = generatePoints(100);
 
-// Random Weights - only single object
+// Random input data
 const randomWeights = () => {
   return {
      x: random(-1,1),
@@ -126,7 +120,8 @@ const randomWeights = () => {
 
 /* ------------
 // Fomula 
-// Guess First Step */
+//////////////--- */
+// Guess First Step
 
 const guess = (weights, point) => {
   const sum = 
@@ -137,12 +132,11 @@ const guess = (weights, point) => {
 }
 
 
-// Training function 
-// Correct result based on error
+// Train function
 const train = (weights, point, team) => {
    const guessResult = guess(weights, point) // 1
    const error = team - guessResult 
-   const learningRate = 0.3
+   const learningRate = 0.1
    return {
      x: weights.x + point.x * error * learningRate,
      y: weights.y + point.y * error * learningRate,
@@ -167,28 +161,18 @@ const trainWeights = () =>{
 }
 
 // svg circles
-let html = `<svg width="${X_MAX}" height="${Y_MAX}">
+$html = `<svg width="${X_MAX}" height="${Y_MAX}">
     ${randomPoints.map(point => 
       `<circle 
          cx="${point.x}"
          cy="${point.y}"
          r="3"
          fill="${guess(trainWeights(),point) === -1 ? 'green': 'blue'}" />`
-    ).join(""}
+    )}
     <line x1="0" x2="${X_MAX}" y1="0" y2="${Y_MAX}" stroke="purple" />
   </svg>`;
 
-// Append svg points
-let points = document.querySelector("#points");
-if(!points){
-
-   let new_points = document.createElement('div');
-   new_points.id = 'points';
-   new_points.innerHTML = html;
-   document.body.append(new_points);
-
-}else{
-  points.innerHTML = html;
-}
+// Append svg circles
+document.querySelector("#app").innerHTML = $html;
 
 ```
