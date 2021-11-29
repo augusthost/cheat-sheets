@@ -277,6 +277,9 @@ Btn.addEventListener("click",e=>{
 **Array.filter** // ယူမယ့် criteria နဲ့ Array ထဲကိုလှမ်းပြီး စစ်ထုတ်ယူတာ၊ Array အကုန်ပြန်မလာပါ လိုအပ်တာပဲ ပြန်လာတယ်။
 
 **Array.map**   // Array အကုန်ပြန်လာတယ် ဒါပေမယ့် each တစ်ခုချင်းစီကို ကိုယ်ပြင်ချင်တာပြင်လို့ရတယ်။
+ 
+ **Array.find**   // Array ထဲကတစ်ခုတည်းပြန်လာတယ် array.filter လိုမျိုး array ပြန်မလာဘူး တကယ့် value or object ပြန်လာတယ်
+
 
 --------
 
