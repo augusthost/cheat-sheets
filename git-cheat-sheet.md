@@ -81,4 +81,19 @@ git commit -m "My Message"
 
 working tree clean ဆိုတဲ့စာသားမျိုးပေါ်နေပြီဆို git push origin master လုပ်လို့ရပါပြီ။ 
 
+------------------
 
+## Ubuntu server ပေါ်တွင် Git credential သိမ်းနည်း
+
+root မှာ ~/.netrc file တစ်ခု လုပ်ပါ
+
+အထဲမှာအောက်ကအတိုင်းထည့်ပါ
+
+```
+machine github.com
+login YOUR_GITHUB_USERNAME
+password YOUR_GITHUB_PASSWORD
+```
+
+သတိ - file permission အသေအချာပေးပါ
+chmod 600 ~/.netrc
