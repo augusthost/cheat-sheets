@@ -173,10 +173,10 @@ add_theme_support( 'post-thumbnails' );
 
 Frontend မှာပြန်ခေါ်သုံးမယ်ဆိုရင် `the_post_thumbnail()` လို့ခေါ်ရမယ် 
 
-− `the_post_thumbnail('thumbnail')` // size သေးသေးလေး 
-− `the_post_thumbnail('medium')` // သာမာန် size  
-− `the_post_thumbnail('large')` // size အကြီး  
-− `the_post_thumbnail('full')` OR  `the_post_thumbnail()` // နဂို original size 
+− `the_post_thumbnail('thumbnail')` // size သေးသေးလေး
+− `the_post_thumbnail('medium')` // သာမာန် size
+− `the_post_thumbnail('large')` // size အကြီး
+− `the_post_thumbnail('full')` OR  `the_post_thumbnail()` // နဂို original size
 
 -------
 
