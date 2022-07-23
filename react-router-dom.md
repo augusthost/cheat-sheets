@@ -1,10 +1,10 @@
 # React Router Dom v6
 
 
-1 - Router installation
-2 - Router configuration
-3 - Link inside components
-4 - Exact prop
+1. Router installation
+2. Router configuration
+3. Link inside components
+4. Exact prop
 
 ## Router Installation
 `npm install react-router-dom@latest` လို့ terminal မှာ run ပြီးသွင်းနိုင်ပါတယ်
