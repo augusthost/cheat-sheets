@@ -76,27 +76,3 @@ return (
 )
 
 ```
-
-## Exact Prop
-
-router ကိုနာမည်ပေးတဲ့အခါ ၂ ခပ်ဆင်ဆင်တွေရှိတတ်ပါတယ် 
-ဥပမာ `/users` က users component ကိုသွားတယ် 
-`/users/:id` က user တစ်ယောက်စီအတွက် user component ကိုသွားတယ်ဆိုပါစို့ 
-
-e.g no exact
-```
- <Route path="/users" component={Users} />
- <Route path="/users/create" component={User} />
-```
-
-router မှာ ဒီအတိုင်းသွားရေးထားမယ်ဆို router ကဘယ် component ကိုသွားရမယ်မသိတော့သလိုဖြစ်သွားပါတယ် 
-ဘာလို့လဲဆိိုတော့ အရှေ့က `/users` က route နာမည် ၂ ခုစလုံးမှာတူနေလို့ပါ ဒါကြောင့် `exact` ဆိုတဲ့ prop ကိုထည့်ရပါတယ်
-အဲဒီ prop ထည့်မှ သူက ကိုယ်သွားလိုက်တဲ့ route ရဲ့ component အတိအကျ ကိုသွားမှာပဲဖြစ်ပါတယ်။ 
-
-
-e.g with exact
-```
- <Route exact path="/users" component={Users} />
- <Route path="/users/create" component={User} />
-```
-
