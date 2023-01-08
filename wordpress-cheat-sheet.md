@@ -286,3 +286,37 @@ $query = new WP_Query($arg);
 * tag_slug__and (array): ခေါ်သုံးမယ့် tag ပေါင်း (slug နာမည်အစုလိုက်)
 * tag_slug__in (array): ခေါ်သုံးမယ့် tag များ (slug နာမည်အစုလိုက်)
 
+-------------- 
+
+## Meta Query
+argument ထဲမှာကို custom field နဲ့တိုက်စစ်ပြီးတော့ filter လုပ်လို့ရပါတယ်
+
+- `=` : equals
+- `!=` : not equals
+- `>` : greater than
+- `>=` : greater than or equal to
+- `<` : less than
+- `<=` : less than or equal to
+- `IN` : in a given array
+- `NOT IN` : not in a given array
+- `BETWEEN` : between two given values
+- `NOT BETWEEN` : not between two given values
+- `EXISTS` : the meta key exists
+- `NOT EXISTS` : the meta key does not exist
+
+ဥပမာ 
+
+```php
+$args = [
+    'post_type' => 'post',
+    'meta_query' => [
+      [
+	'key' => 'price',
+	'value' => 1000,
+	'compare' => '>='
+      ]
+    ]
+  ];
+```
+
+အပေါ်က arguments ရဲ့ဆိုလိုချက်က စျေးနူန်း 1000 နဲ့ညီတာသို့မဟုတ် ကြီးတာကို ဆွဲထုတ်ပေးမှာဖြစ်ပါတယ်။  
