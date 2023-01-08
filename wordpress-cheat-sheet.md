@@ -289,7 +289,7 @@ $query = new WP_Query($arg);
 -------------- 
 
 ## Meta Query
-argument ထဲမှာကို custom field နဲ့တိုက်စစ်ပြီးတော့ filter လုပ်လို့ရပါတယ်
+post loop argument ထဲမှာကို custom field ရဲ့ value နဲ့တိုက်စစ်ပြီးတော့ filter လုပ်လို့ရပါတယ်
 
 - `=` : equals
 - `!=` : not equals
