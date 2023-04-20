@@ -1,5 +1,6 @@
 # React Redux Toolkit
 
+[demo](https://codesandbox.io/s/react-redux-toolkit-8hkes8?file=/src/App.tsx:0-910)
 
 ## Understanding Store, Reducer, Selector, Action and Dispatch
 
@@ -167,3 +168,8 @@ export default function App() {
 
 ## 6. Selector
 selector က dispatch နဲ့ဆန့်ကျင်ဘက်လို့ပြောရမယ် အသွားလမ်းကိုပို့ပေးပြီး data တွေကို ပြန်ဆွဲထုတ်တဲ့ လမ်းမှာကျတော့ useSelector နဲ့ state data တွေကိုပြန်ဆွဲထုတ်လာတာပဲဖြစ်ပါတယ် step 5 က code ကိုပဲပြန်ကြည့်လို့ရပါတယ်။ 
+
+
+---
+
+[demo](https://codesandbox.io/s/react-redux-toolkit-8hkes8?file=/src/App.tsx:0-910)
