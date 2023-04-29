@@ -33,10 +33,9 @@ pages/api/auth ဆိုတဲ့အောက်မှာ `[...nextauth].js` fil
 -------
 
 ## 3. Add nextauth options
-Next auth options တွေကိုအောက်က code အတိုင်းထည့်ပါ 
+`[...nextauth].js` file ထဲမှာ next auth options တွေကိုအောက်က code အတိုင်းထည့်ပါ 
 
 ```javascript
-import { fetchAPI } from "../../../../Helper";
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from 'next-auth';
 
@@ -52,7 +51,8 @@ export const authOptions = {
       		 password: { label: "Password", type: "password" }
           },
           async authorize(credentials, req) {
-              const res = await fetchAPI(credentials);
+              // fetch API or query DB here
+              // const res = await fetchAPI(credentials);
               if(res.status !== 200){
                 throw new Error('Wrong credential')
               }
@@ -75,6 +75,9 @@ export default NextAuth(authOptions)
 > မှတ်ချက် ။ ။ credentials ဆိုတဲ့ object ထဲကဟာတွေ ကိုကျတော့ဖျက်ပစ်ရမှာပဲဖြစ်ပါတယ်
 
 ```
+  name: "Email and Password",
+  credentials: {}
+  ...
   pages: {
       signIn: "/auth/login"
   }
@@ -83,10 +86,11 @@ export default NextAuth(authOptions)
 -------
 
 ## 5. Handle login form data
-login form data တွေကို အဆင်ပြေသလိုဖမ်းလို့ရပါတယ် ဒါပေမယ့် ဒီအောက်ကအတိုင်း auth ကိုပစ်ရမှာပဲဖြစ်ပါတယ်။
+login form input data တွေကို အဆင်ပြေသလိုဖမ်းလို့ရပါတယ် ရလာတဲ့ credential data တွေကို ဒီအောက်ကအတိုင်း auth ကိုပစ်ရမှာပဲဖြစ်ပါတယ်။
 
 ```javascript
-const res = await signIn("credentials", {
+
+  const res = await signIn("credentials", {
     email: emailValue,
     password: passValue,
     redirect: false,
@@ -166,8 +170,9 @@ export default LoginForm;
 
 ## 6. Wrap next app with SessionProvider
 
-Next _app.js ထဲမှာ SessionProvider နဲ့ wrap လုပ်မှသာ ကျန်တာအလုပ်လုပ်မှာပဲဖြစ်ပါတယ်
-ဒီ step ကိုမမေ့ပါနှင့် 
+တခြား react library တွေလိုမျိုးပဲ Next _app.js ထဲမှာ SessionProvider နဲ့ wrap လုပ်မှသာ ကျန်တာအလုပ်လုပ်မှာပဲဖြစ်ပါတယ်
+
+> ဒီ step ကိုမမေ့ပါနှင့် 
 
 ```javascript
 
@@ -208,7 +213,7 @@ const res = await signIn("credentials", {
 -------
 
 ## 8. Protect pages
-Page ကို useSession method နဲ့ protect လုပ်လို့ရပါတယ်
+မိမိပိတ်ချင်တဲ့ Page ကို useSession method နဲ့ protect လုပ်လို့ရပါတယ်
 
 ```javascript
 
