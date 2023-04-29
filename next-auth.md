@@ -1,9 +1,13 @@
 # Next JS Auth
 
-Next auth ဆိုတာ oauth providers ပေါင်းမြောက်များစွာကို ထည့်ရေးထားတဲ့ library တစ်ခုပါ
+Next auth ဆိုတာ OAuth providers ပေါင်းမြောက်များစွာကို ထည့်ရေးထားတဲ့ library တစ်ခုပါ
 Google Facebook Apple Github တွေနဲ့ လွယ်လွယ်ကူကူဝင်လို့ရပါတယ်။ 
 
-အခုအောက်က ကျနော်သွားမှာကတော့ သာမန် credential login နဲ့ဆိုဘယ်လိုသွားမလဲဆိုတာပါပဲ 
+အခုအောက်က cheat sheet ကတော့ next auth သုံးပြီး သာမန် credential login နဲ့ဆိုဘယ်လိုသွားမလဲဆိုတာပါပဲ 
+
+
+<img width="584" alt="Screen Shot 2023-04-28 at 11 08 27 PM" src="https://user-images.githubusercontent.com/33022876/235281395-1b8ccc6e-174c-4696-93c1-43392cb01425.png">
+
 
 > မှတ်ချက် ။ ။ javascript အတွက်သာဖြစ်ပါတယ် typescript မပါပါ။
 
