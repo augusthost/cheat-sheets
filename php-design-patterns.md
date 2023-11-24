@@ -70,7 +70,7 @@ interface CarServiceInterface{
 ## The template method pattern 
 
 #### Abstract Class
-Interface လိုမျိုးပဲ methods တွေကိုဘုံထုတ်တဲ့အခါသုံးပါတယ် ဒါပေမယ့် inherit class ပုံစံဖြစ်တဲ့အတွက် implements လုပ်တာမျိုးမဟုတ်ပဲ extends လုပ်ရတာဖြစ်ပါတယ်။ ပြီးတော့ interface လိုမျိုး method နာမည်ချည်းမဟုတ်ပဲ codes တွေပါထည့်ရေးရပါတယ်။
+Interface လိုမျိုးပဲ methods တွေကိုဘုံထုတ်တဲ့အခါသုံးပါတယ် ဒါပေမယ့် inherit class ပုံစံဖြစ်တဲ့အတွက် implements လုပ်တာမျိုးမဟုတ်ပဲ extends လုပ်ရတာဖြစ်ပါတယ်။ ပြီးတော့ interface လိုမျိုး method နာမည်ချည်းမဟုတ်ပဲ codes တွေပါထည့်ရေးရပါတယ်။ instantiate လုပ်ပြီး သုံးလို့မရတဲ့အတွက် developer တွေမိမိ class ကိုမထိခိုက်စေလိုတဲ့အချိန်မှာသုံးလေ့ရှိပါတယ်။
 
 ```php
 
