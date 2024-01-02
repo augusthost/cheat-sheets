@@ -250,6 +250,8 @@ $args = array(
   
 ```
 
+> သတိ - pagination ထည့်လျှင် ပြဿနာမတက်အောင် page url ကို `/postname/` ဖြင့်အသုံးပြုရပါမည် (setting အောက်က permalinks မှာတစ်ချက်ပြောင်းရပါမည်)
+
 ------
 
 ## WP_QUERY
