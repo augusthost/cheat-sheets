@@ -1,7 +1,12 @@
 # Git Cheat Seet ( Only for master branch )
 
-# Creat new repository
+# Creat new repository via UI
 github Repository တစ်ခုလုပ်မယ်ဆို github menu ရဲ့ညာဘက်ကအပေါင်းမှာနှိပ်ပြီးလုပ်လို့ရတယ်
+
+----------
+
+# Creat new repository in terminal
+github Repository တစ်ခုလုပ်မယ်ဆို `git init` ဆိုပြီး folder ထဲ run လိုက်ရင် git repo တစ်ခု auto လုပ်ပါတယ်
 
 ----------
 
